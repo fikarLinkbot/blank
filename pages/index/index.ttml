@@ -1,0 +1,8 @@
+<view class="container">
+  <view class="userinfo">
+    <button bindtap="showMessage">click the button to display message</button>
+  </view>
+  <view class="textinfo" tt:if="{{isShowMessage}}">
+    <text class="text">{{message}}</text>
+  </view>
+</view>

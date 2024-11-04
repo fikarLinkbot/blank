@@ -1,0 +1,16 @@
+<view class="detail-container">
+  <view class="detail-card">
+    <view class="detail-field">
+      <text class="label">Name:</text>
+      <text class="value">{{name}}</text>
+    </view>
+    <view class="detail-field">
+      <text class="label">Age:</text>
+      <text class="value">{{age}}</text>
+    </view>
+    <view class="detail-field">
+      <text class="label">Status:</text>
+      <text class="status-value">{{status}}</text>
+    </view>
+  </view>
+</view>

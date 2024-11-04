@@ -1,0 +1,13 @@
+<view class="container">
+  <scroll-view class="scroll-container">
+    <block wx:for="{{items}}" wx:key="id">
+      <navigator url="/pages/page3/page3?name={{item.fields.Name}}&age={{item.fields.Age}}&status={{item.fields.Status}}" open-type="navigate">
+        <view class="list-item">
+          <text class="name">Name: {{item.fields.Name}}</text>
+          <text class="age">Age: {{item.fields.Age}}</text>
+          <text class="status">Status: {{item.fields.Status}}</text>
+        </view>
+      </navigator>
+    </block>
+  </scroll-view>
+</view>
