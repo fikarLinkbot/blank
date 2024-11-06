@@ -1,8 +1,25 @@
 <view class="container">
-  <view class="userinfo">
-    <button bindtap="showMessage">click the button to display message</button>
-  </view>
-  <view class="textinfo" tt:if="{{isShowMessage}}">
-    <text class="text">{{message}}</text>
-  </view>
+  <!-- Kontainer scrollable untuk semua data -->
+  <scroll-view class="scroll-container" scroll-y="true" style="height: 80vh;">
+    
+    <!-- Tombol untuk navigasi ke halaman tambah record -->
+    <navigator url="/pages/add/add" open-type="navigate">
+      <button>Add New Record</button>
+    </navigator>
+
+    <!-- Jarak kosong untuk memberi spasi -->
+    <view style="height: 20px;"></view>
+
+    <!-- List data yang bisa di-scroll -->
+    <block wx:for="{{items}}" wx:key="item.id">
+      <navigator url="/pages/detail/detail?name={{item.fields.Name}}&age={{item.fields.Age}}&status={{item.fields.Status}}" open-type="navigate">
+        <view class="list-item">
+          <text class="name">Name: {{item.fields.Name}}</text>
+          <text class="age">Age: {{item.fields.Age}}</text>
+          <text class="status">Status: {{item.fields.Status}}</text>
+        </view>
+      </navigator>
+    </block>
+
+  </scroll-view>
 </view>

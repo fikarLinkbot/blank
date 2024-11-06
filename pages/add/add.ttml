@@ -1,0 +1,18 @@
+<view class="container">
+  <view class="form-item">
+    <text>Name:</text>
+    <input type="text" placeholder="Enter name" bindinput="onNameInput" />
+  </view>
+
+  <view class="form-item">
+    <text>Age:</text>
+    <input type="number" placeholder="Enter age" bindinput="onAgeInput" />
+  </view>
+
+  <view class="form-item">
+    <text>Status:</text>
+    <input type="text" placeholder="Enter status" bindinput="onStatusInput" />
+  </view>
+
+  <button type="primary" bindtap="submitForm">Add Record</button>
+</view>

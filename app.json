@@ -1,8 +1,8 @@
 {
   "pages":[
-    "pages/page2/page2",
-    "pages/page3/page3",
-    "pages/index/index"
+    "pages/index/index",
+    "pages/detail/detail",
+    "pages/add/add"
   ],
   "window":{
     "backgroundTextStyle":"light",
