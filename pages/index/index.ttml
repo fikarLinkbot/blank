@@ -1,6 +1,6 @@
 <view class="container">
   <!-- Kontainer scrollable untuk semua data -->
-  <scroll-view class="scroll-container" scroll-y="true" style="height: 80vh;">
+  <scroll-view class="scroll-container" scroll-y="true" >
     
     <!-- Tombol untuk navigasi ke halaman tambah record -->
     <navigator url="/pages/add/add" open-type="navigate">

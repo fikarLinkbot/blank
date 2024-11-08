@@ -1,0 +1,39 @@
+<view class="container mt-5">
+  <!-- Judul Halaman -->
+  <view class="text-center mb-4">
+    <text class="display-4 text-primary">Test Bootstrap</text>
+  </view>
+
+  <!-- Konten Grid -->
+  <view class="row">
+    <!-- Kolom 1 -->
+    <view class="col-md-4 mb-4">
+      <view class="card h-100">
+        <view class="card-body">
+          <text class="card-title h5 text-danger">Konten 1</text>
+          <text class="card-text text-muted">Ini adalah deskripsi konten pertama. Tambahkan informasi apa pun yang relevan di sini.</text>
+        </view>
+      </view>
+    </view>
+
+    <!-- Kolom 2 -->
+    <view class="col-md-4 mb-4">
+      <view class="card h-100">
+        <view class="card-body">
+          <text class="card-title h5 text-success">Konten 2</text>
+          <text class="card-text text-muted">Ini adalah deskripsi konten kedua. Anda dapat menambahkan informasi yang berbeda di sini.</text>
+        </view>
+      </view>
+    </view>
+
+    <!-- Kolom 3 -->
+    <view class="col-md-4 mb-4">
+      <view class="card h-100">
+        <view class="card-body">
+          <text class="card-title h5 text-warning">Konten 3</text>
+          <text class="card-text text-muted">Ini adalah deskripsi konten ketiga. Sesuaikan teks ini sesuai kebutuhan.</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

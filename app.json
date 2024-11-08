@@ -2,12 +2,39 @@
   "pages":[
     "pages/index/index",
     "pages/detail/detail",
-    "pages/add/add"
+    "pages/add/add",
+    "pages/newTab/newTab"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "Title",
     "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#646A73",
+    "selectedColor": "#4b49ac",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/dashboard.png",
+        "selectedIconPath": "images/dashboard_active.png",
+        "text": "Records"
+      },
+      {
+        "pagePath": "pages/newTab/newTab",
+        "iconPath": "images/dashboard.png",
+        "selectedIconPath": "images/dashboard_active.png",
+        "text": "New Tab"
+      }
+    ]
+  },
+  "ext": {
+    "defaultPages": {
+      "sidebarMode": "pages/index/index",
+      "PCMode": "pages/index/index"
+    }
   }
 }

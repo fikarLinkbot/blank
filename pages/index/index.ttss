@@ -1,11 +1,9 @@
 .container {
   padding: 20px;
   background-color: #f9f9f9;
-  min-height: 100vh;
 }
 
 .scroll-container {
-  max-height: 80vh;
   overflow-y: scroll;
 }
 
