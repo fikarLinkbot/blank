@@ -46,3 +46,25 @@
   color: #ffffff;
   background-color: #4caf50; /* Default color for Status */
 }
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.edit-button, .delete-button {
+  padding: 0px 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.edit-button {
+  background-color: blue;
+  color: white;
+  margin-right: 10px;
+}
+
+.delete-button {
+  background-color: red;
+  color: white;
+}

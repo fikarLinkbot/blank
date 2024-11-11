@@ -2,15 +2,19 @@
   <view class="detail-card">
     <view class="detail-field">
       <text class="label">Name:</text>
-      <text class="value">{{name}}</text>
+      <input class="value" placeholder="Enter name" value="{{name}}" bindinput="onInputChange" data-field="name" />
     </view>
     <view class="detail-field">
       <text class="label">Age:</text>
-      <text class="value">{{age}}</text>
+      <input class="value" type="number" placeholder="Enter age" value="{{age}}" bindinput="onInputChange" data-field="age" />
     </view>
     <view class="detail-field">
       <text class="label">Status:</text>
-      <text class="status-value">{{status}}</text>
+      <input class="value" placeholder="Enter status" value="{{status}}" bindinput="onInputChange" data-field="status" />
+    </view>
+    <view class="button-container">
+      <button class="edit-button" bindtap="handleEdit">Update</button>
+      <button class="delete-button" bindtap="handleDelete">Delete</button>
     </view>
   </view>
 </view>

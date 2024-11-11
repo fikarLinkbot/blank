@@ -12,7 +12,7 @@
 
     <!-- List data yang bisa di-scroll -->
     <block wx:for="{{items}}" wx:key="item.id">
-      <navigator url="/pages/detail/detail?name={{item.fields.Name}}&age={{item.fields.Age}}&status={{item.fields.Status}}" open-type="navigate">
+      <navigator url="/pages/detail/detail?name={{item.fields.Name}}&age={{item.fields.Age}}&status={{item.fields.Status}}&recordId={{item.record_id}}" open-type="navigate">
         <view class="list-item">
           <text class="name">Name: {{item.fields.Name}}</text>
           <text class="age">Age: {{item.fields.Age}}</text>
