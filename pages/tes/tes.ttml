@@ -1,0 +1,58 @@
+<view class="container mt-5">
+  <!-- Header -->
+  <view class="text-center mb-4">
+    <text class="display-4 text-secondary d-block mb-1">Galeri Kreatif</text>
+    <text class="lead text-muted mt-2 d-block">Eksplorasi Warna, Font, dan Ikon</text>
+  </view>
+
+  <!-- Grid Konten Utama (2x2) -->
+  <view class="row row-cols-1 row-cols-md-2 g-4">
+    <!-- Card 1 -->
+    <view class="col">
+      <view class="card text-center h-100 shadow-sm border-0 p-3">
+        <view class="card-body">
+          <text class="fas fa-palette fa-3x text-danger mb-3"></text>
+          <text class="h5 text-danger d-block mb-1">Kreativitas</text>
+          <text class="text-muted d-block mb-2">Temukan inspirasi dari warna-warni kehidupan.</text>
+          <button class="btn btn-outline-danger mt-3">Jelajahi</button>
+        </view>
+      </view>
+    </view>
+
+    <!-- Card 2 -->
+    <view class="col">
+      <view class="card text-center h-100 shadow-sm border-0 p-3">
+        <view class="card-body">
+          <text class="fas fa-mountain fa-3x text-success mb-3"></text>
+          <text class="h5 text-success d-block mb-1">Keindahan Alam</text>
+          <text class="text-muted d-block mb-2">Keajaiban alam di setiap sudut.</text>
+          <button class="btn btn-outline-success mt-3">Lihat Selengkapnya</button>
+        </view>
+      </view>
+    </view>
+
+    <!-- Card 3 -->
+    <view class="col">
+      <view class="card text-center h-100 shadow-sm border-0 p-3">
+        <view class="card-body">
+          <text class="fas fa-music fa-3x text-warning mb-3"></text>
+          <text class="h5 text-warning d-block mb-1">Musik</text>
+          <text class="text-muted d-block mb-2">Mendengar nada dan irama hidup.</text>
+          <button class="btn btn-outline-warning mt-3">Dengarkan</button>
+        </view>
+      </view>
+    </view>
+
+    <!-- Card 4 -->
+    <view class="col">
+      <view class="card text-center h-100 shadow-sm border-0 p-3">
+        <view class="card-body">
+          <text class="fas fa-rocket fa-3x text-primary mb-3"></text>
+          <text class="h5 text-primary d-block mb-1">Eksplorasi Luar Angkasa</text>
+          <text class="text-muted d-block mb-2">Menyelami misteri luar angkasa.</text>
+          <button class="btn btn-outline-primary mt-3">Terbang</button>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,39 +1,86 @@
 <view class="container mt-5">
-  <!-- Judul Halaman -->
+  <!-- Header -->
   <view class="text-center mb-4">
-    <text class="display-4 text-primary">Test Bootstrap</text>
-  </view>
+    <text class="display-6 text-secondary d-block text-edu">Galeri Styling</text>
+    <text class="lead text-muted mt-2 d-block">Tes Font</text>
+    <!-- <text class="lead text-muted mt-2 d-block tes">Tes Font</text> -->
+    <!-- <text class="lead text-muted mt-2 d-block tes2">Tes Font</text> -->
+    <!-- <text class="lead text-muted mt-2 d-block tes3">Tes Font</text> -->
+    <text class="lead text-muted mt-2 d-block tes2">Tes Font</text>
 
-  <!-- Konten Grid -->
+
+  </view>
+  
+  <!-- Grid Konten Utama -->
   <view class="row">
-    <!-- Kolom 1 -->
+    <!-- Kolom 1: Kartu Profil -->
     <view class="col-md-4 mb-4">
-      <view class="card h-100">
-        <view class="card-body">
-          <text class="card-title h5 text-danger">Konten 1</text>
-          <text class="card-text text-muted">Ini adalah deskripsi konten pertama. Tambahkan informasi apa pun yang relevan di sini.</text>
+      <view class="card shadow-sm h-100">
+        <view class="card-body text-center">
+          <!-- Menggunakan Icon FontAwesome -->
+          <text class="fas fa-user-circle fa-2x text-primary mb-3 me-3"></text>
+          <text class="h5 text-danger">Profil</text>
+          <text class="text-muted mt-2 d-block">Ini adalah deskripsi profil singkat.</text>
+          <button class="btn btn-primary mt-3">Lihat Detail</button>
         </view>
       </view>
     </view>
 
-    <!-- Kolom 2 -->
+    <!-- Kolom 2: Kartu Kontak -->
     <view class="col-md-4 mb-4">
-      <view class="card h-100">
-        <view class="card-body">
-          <text class="card-title h5 text-success">Konten 2</text>
-          <text class="card-text text-muted">Ini adalah deskripsi konten kedua. Anda dapat menambahkan informasi yang berbeda di sini.</text>
+      <view class="card shadow-sm h-100">
+        <view class="card-body text-center">
+          <text class="fas fa-envelope fa-2x text-success mb-3 me-3"></text>
+          <text class="h5 text-success">Kontak Kami</text>
+          <text class="text-muted mt-2 d-block">Hubungi kami untuk informasi lebih lanjut.</text>
+          <button class="btn btn-success mt-3">Hubungi Sekarang</button>
         </view>
       </view>
     </view>
 
-    <!-- Kolom 3 -->
+    <!-- Kolom 3: Kartu Dukungan -->
     <view class="col-md-4 mb-4">
-      <view class="card h-100">
-        <view class="card-body">
-          <text class="card-title h5 text-warning">Konten 3</text>
-          <text class="card-text text-muted">Ini adalah deskripsi konten ketiga. Sesuaikan teks ini sesuai kebutuhan.</text>
+      <view class="card shadow-sm h-100">
+        <view class="card-body text-center">
+          <text class="fas fa-headset fa-2x text-warning mb-3 me-3"></text>
+          <text class="h5 text-warning">Dukungan</text>
+          <text class="text-muted mt-2 d-block">Kami siap membantu Anda 24/7.</text>
+          <button class="btn btn-warning mt-3">Bantuan</button>
         </view>
       </view>
     </view>
   </view>
+
+  <text class="lead text-muted mt-2 d-block mb-3">Icon Default Lark</text>
+  <view class="background" >
+    <view class="icon-line" tt:for="{{icons}}" tt:for-item="iconline">
+      <view class="ttui-flex__item icon-single-wrapper" tt:for="{{iconline}}" tt:for-item="icon">
+        <label>
+          <icon type="{{icon}}"></icon>
+          {{icon}}
+        </label>
+      </view>
+    </view>
+  </view>
+
+  <!-- <view class="mb-3"></view>
+  <text class="lead text-muted mt-2 d-block">Icon Font Awesome</text>
+  <view class="mb-3"></view>
+
+  <view class="fas fa-home icon mb-3 me-3"></view>
+  <view class="fas fa-user icon mb-3 me-3"></view>
+  <view class="fas fa-envelope icon mb-3 me-3"></view>
+  <view class="fas fa-phone icon mb-3 me-3"></view>
+  <view class="fas fa-cog icon mb-3 me-3"></view>
+  <view class="fas fa-camera icon mb-3 me-3"></view>
+  <view class="fas fa-car icon mb-3 me-3"></view>
+  <view class="fas fa-heart icon mb-3 me-3"></view>
+  <view class="fas fa-star icon mb-3 me-3"></view>
+  <view class="fas fa-bell icon mb-3 me-3"></view>
+  <view class="fas fa-shopping-cart icon mb-3 me-3"></view>
+  <view class="fas fa-comment icon mb-3 me-3"></view>
+  <view class="fas fa-map-marker-alt icon mb-3 me-3"></view>
+  <view class="fas fa-music icon mb-3 me-3"></view>
+  <view class="fas fa-cloud icon mb-3 me-3"></view> -->
+
 </view>

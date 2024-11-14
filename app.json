@@ -3,7 +3,8 @@
     "pages/index/index",
     "pages/detail/detail",
     "pages/add/add",
-    "pages/newTab/newTab"
+    "pages/newTab/newTab",
+    "pages/tes/tes"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -28,13 +29,19 @@
         "iconPath": "images/dashboard.png",
         "selectedIconPath": "images/dashboard_active.png",
         "text": "New Tab"
+      },
+      {
+        "pagePath": "pages/tes/tes",
+        "iconPath": "images/dashboard.png",
+        "selectedIconPath": "images/dashboard_active.png",
+        "text": "Tes"
       }
     ]
   },
   "ext": {
     "defaultPages": {
-      "sidebarMode": "pages/index/index",
-      "PCMode": "pages/index/index"
+      "sidebarMode": "pages/newTab/newTab",
+      "PCMode": "pages/newTab/newTab"
     }
   }
 }
