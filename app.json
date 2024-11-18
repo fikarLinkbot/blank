@@ -4,7 +4,8 @@
     "pages/detail/detail",
     "pages/add/add",
     "pages/newTab/newTab",
-    "pages/tes/tes"
+    "pages/tes/tes",
+    "pages/tes2/tes2"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -35,6 +36,12 @@
         "iconPath": "images/dashboard.png",
         "selectedIconPath": "images/dashboard_active.png",
         "text": "Tes"
+      },
+      {
+        "pagePath": "pages/tes2/tes2",
+        "iconPath": "images/dashboard.png",
+        "selectedIconPath": "images/dashboard_active.png",
+        "text": "Tes 2"
       }
     ]
   },

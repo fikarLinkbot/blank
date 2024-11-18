@@ -1,0 +1,65 @@
+<view class="container py-4">
+  <!-- Button -->
+  <view class="mb-3">
+    <label class="form-label">Button:</label>
+    <button bindtap="onButtonTap" class="btn btn-primary">Click Me</button>
+  </view>
+
+  <!-- Input -->
+  <view class="mb-3">
+    <label for="text-input" class="form-label">Input:</label>
+    <input id="text-input" type="text" class="form-control" placeholder="Enter text" bindinput="onTextInputChange" />
+  </view>
+
+  <!-- Textarea -->
+  <view class="mb-3">
+    <label for="textarea" class="form-label">Textarea:</label>
+    <textarea id="textarea" class="form-control" rows="4" placeholder="Enter long text" bindinput="onTextareaChange"></textarea>
+  </view>
+
+  <!-- Radio Group -->
+  <view class="mb-3">
+    <label class="form-label">Radio Group:</label>
+    <radio-group bindchange="onRadioChange">
+      <view wx:for="{{radioGroup}}" wx:key="value" class="d-flex align-items-center mb-2">
+        <radio value="{{item.value}}" class="me-2" /> 
+        <span>{{item.name}}</span>
+      </view>
+    </radio-group>
+  </view>
+
+  <!-- Checkbox Group -->
+  <view class="mb-3">
+    <label class="form-label">Checkbox Group:</label>
+    <checkbox-group bindchange="onCheckboxChange">
+      <view wx:for="{{checkboxGroup}}" wx:key="value" class="d-flex align-items-center mb-2">
+        <checkbox value="{{item.value}}" class="me-2" checked="{{item.checked}}" /> 
+        <span>{{item.name}}</span>
+      </view>
+    </checkbox-group>
+  </view>
+
+  <!-- Picker -->
+  <view class="mb-3">
+    <label class="form-label">Picker:</label>
+    <picker mode="selector" range="{{pickerOptions}}" bindchange="onPickerChange" class="form-select">
+      <view>{{pickerOptions[pickerSelectedIndex]}}</view>
+    </picker>
+  </view>
+
+  <!-- Slider -->
+  <view class="mb-3">
+    <label for="slider" class="form-label">Slider:</label>
+    <slider id="slider" value="{{sliderValue}}" min="0" max="100" bindchange="onSliderChange" class="form-range" />
+  </view>
+
+  <!-- Switch -->
+  <view class="mb-3">
+    <label style="font-weight: bold; display: block; margin-bottom: 5px;">Switch:</label>
+    <view class="d-flex align-items-center">
+      <switch id="switch" checked="{{switchValue}}" bindchange="onSwitchChange" 
+        style="margin-right: 10px;" />
+      <label for="switch">Switch</label>
+    </view>
+  </view>
+</view>

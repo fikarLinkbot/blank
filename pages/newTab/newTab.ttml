@@ -2,11 +2,11 @@
   <!-- Header -->
   <view class="text-center mb-4">
     <text class="display-6 text-secondary d-block text-edu">Galeri Styling</text>
-    <text class="lead text-muted mt-2 d-block">Tes Font</text>
-    <!-- <text class="lead text-muted mt-2 d-block tes">Tes Font</text> -->
+    <text class="lead text-muted mt-2 d-block">Normal Text</text>
+    <text class="lead text-muted mt-2 d-block tes">Playfair Display</text>
     <!-- <text class="lead text-muted mt-2 d-block tes2">Tes Font</text> -->
     <!-- <text class="lead text-muted mt-2 d-block tes3">Tes Font</text> -->
-    <text class="lead text-muted mt-2 d-block tes2">Tes Font</text>
+    <text class="lead text-muted mt-2 d-block tes2">Lobster</text>
 
 
   </view>
@@ -63,7 +63,7 @@
     </view>
   </view>
 
-  <!-- <view class="mb-3"></view>
+  <view class="mb-3"></view>
   <text class="lead text-muted mt-2 d-block">Icon Font Awesome</text>
   <view class="mb-3"></view>
 
@@ -81,6 +81,6 @@
   <view class="fas fa-comment icon mb-3 me-3"></view>
   <view class="fas fa-map-marker-alt icon mb-3 me-3"></view>
   <view class="fas fa-music icon mb-3 me-3"></view>
-  <view class="fas fa-cloud icon mb-3 me-3"></view> -->
+  <view class="fas fa-cloud icon mb-3 me-3"></view>
 
 </view>
