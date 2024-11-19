@@ -1,11 +1,12 @@
 {
   "pages":[
-    "pages/index/index",
+    "pages/crud/index",
     "pages/detail/detail",
     "pages/add/add",
-    "pages/newTab/newTab",
-    "pages/tes/tes",
-    "pages/tes2/tes2"
+    "pages/font/index",
+    "pages/bootstrap/index",
+    "pages/form/index",
+    "pages/media/index"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -20,35 +21,41 @@
     "backgroundColor": "#ffffff",
     "list": [
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/crud/index",
         "iconPath": "images/dashboard.png",
         "selectedIconPath": "images/dashboard_active.png",
-        "text": "Records"
+        "text": "CRUD"
       },
       {
-        "pagePath": "pages/newTab/newTab",
+        "pagePath": "pages/font/index",
         "iconPath": "images/dashboard.png",
         "selectedIconPath": "images/dashboard_active.png",
-        "text": "New Tab"
+        "text": "Font"
       },
       {
-        "pagePath": "pages/tes/tes",
+        "pagePath": "pages/bootstrap/index",
         "iconPath": "images/dashboard.png",
         "selectedIconPath": "images/dashboard_active.png",
-        "text": "Tes"
+        "text": "Bootstrap"
       },
       {
-        "pagePath": "pages/tes2/tes2",
+        "pagePath": "pages/form/index",
         "iconPath": "images/dashboard.png",
         "selectedIconPath": "images/dashboard_active.png",
-        "text": "Tes 2"
+        "text": "Form"
+      },
+      {
+        "pagePath": "pages/media/index",
+        "iconPath": "images/dashboard.png",
+        "selectedIconPath": "images/dashboard_active.png",
+        "text": "Media"
       }
     ]
   },
   "ext": {
     "defaultPages": {
-      "sidebarMode": "pages/newTab/newTab",
-      "PCMode": "pages/newTab/newTab"
+      "sidebarMode": "pages/form/index",
+      "PCMode": "pages/form/index"
     }
   }
 }

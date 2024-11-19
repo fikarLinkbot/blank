@@ -1,0 +1,14 @@
+<view class="container">
+  <view class="header">
+    <text>Media Selector</text>
+  </view>
+  <view class="media-options">
+    <button bindtap="selectImage">Select Image</button>
+    <button bindtap="selectVideo">Select Video</button>
+    <button bindtap="openCamera">Open Camera</button>
+  </view>
+  <view class="output">
+    <image wx:if="{{mediaType === 'image'}}" src="{{mediaPath}}" class="media-preview"></image>
+    <video wx:if="{{mediaType === 'video'}}" src="{{mediaPath}}" controls class="media-preview"></video>
+  </view>
+</view>

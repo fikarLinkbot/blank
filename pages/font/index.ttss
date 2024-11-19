@@ -1,0 +1,50 @@
+/* Import Font Lokal*/
+@font-face {
+  font-family: 'Lobster';
+  src: url('../../fonts/Lobster-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Oswald';
+  src: url('../../fonts/Oswald-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Import Font by URL */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Oswald:wght@200..700&display=swap');
+
+/* Import Icon */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+/* Modifiy class */
+.font1 {
+  font-family: 'Lobster', cursive;
+}
+  
+.font2 {
+  font-family: 'Oswald', sans-serif;
+}
+
+.font3 {
+  font-family: 'Playfair Display', serif;
+}
+
+.font4 {
+font-family: 'Roboto', sans-serif;
+}
+
+.font5 {
+  font-family: "Edu AU VIC WA NT Pre", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.icon {
+font-size: 24px;
+color: #4CAF50;
+}

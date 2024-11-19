@@ -1,0 +1,44 @@
+<view style="margin-top: 2rem; display: flex; flex-direction: column; align-items: center;">
+  <!-- List of Custom Font -->
+  <view style="text-align: left; margin-bottom: 0.5rem;">
+    <text style="text-align: center; font-size: 1.25rem; color: #6c757d; display: block;">Example of Custom Font</text>
+    <text style="margin-top: 0.2rem; display: block;" class="font1">This text uses Lobster</text>
+    <text style="margin-top: 0.2rem; display: block;" class="font2">This text uses Oswald</text>
+    <text style="margin-top: 0.2rem; display: block;" class="font3">This text uses Playfair Display</text>
+    <text style="margin-top: 0.2rem; display: block;" class="font4">This text uses Roboto</text>
+    <text style="margin-top: 0.2rem; display: block;" class="font5">This text uses Edu AU VIC WA NT Pre</text>
+  </view>
+
+  <!-- List of Lark Icon -->
+  <text style="font-size: 1.25rem; color: #6c757d; margin-top: 0.5rem; margin-bottom: 0.5rem; display: block;">Icon Default Lark</text>
+  <view style="display: flex; flex-wrap: wrap; gap: 0.2rem; justify-content: center;">
+    <view style="display: flex; align-items: center;" tt:for="{{icons}}" tt:for-item="iconline">
+      <view style="margin: 0.1rem;" tt:for="{{iconline}}" tt:for-item="icon">
+        <label>
+          <icon type="{{icon}}"></icon>
+          {{icon}}
+        </label>
+      </view>
+    </view>
+  </view>
+
+  <!-- List of Font Awesome Icon -->
+  <text style="font-size: 1.25rem; color: #6c757d; margin-top: 0.5rem; margin-bottom: 0.5rem; display: block;">Icon Font Awesome</text>
+  <view style="display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center; margin-bottom: 0.5rem;">
+    <view class="fas fa-home icon"></view>
+    <view class="fas fa-user icon"></view>
+    <view class="fas fa-envelope icon"></view>
+    <view class="fas fa-phone icon"></view>
+    <view class="fas fa-cog icon"></view>
+    <view class="fas fa-camera icon"></view>
+    <view class="fas fa-car icon"></view>
+    <view class="fas fa-heart icon"></view>
+    <view class="fas fa-star icon"></view>
+    <view class="fas fa-bell icon"></view>
+    <view class="fas fa-shopping-cart icon"></view>
+    <view class="fas fa-comment icon"></view>
+    <view class="fas fa-map-marker-alt icon"></view>
+    <view class="fas fa-music icon"></view>
+    <view class="fas fa-cloud icon"></view>
+  </view>
+</view>

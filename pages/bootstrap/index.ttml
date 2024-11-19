@@ -1,0 +1,54 @@
+<view class="container">
+  <!-- Header -->
+  <view class="header">
+    <text class="title">Galeri Kreatif</text>
+    <text class="subtitle">Eksplorasi Warna, Font, dan Ikon</text>
+  </view>
+
+  <!-- Scrollable Content -->
+  <scroll-view scroll-y="true" class="scroll-container">
+    <!-- Konten Pertama: Grid 2x2 -->
+    <view class="grid-container">
+      <view class="grid-item" bindtap="onItemClick">
+        <text class="icon">🎨</text>
+        <text class="label">Kreativitas</text>
+      </view>
+      <view class="grid-item" bindtap="onItemClick">
+        <text class="icon">⛰️</text>
+        <text class="label">Keindahan Alam</text>
+      </view>
+      <view class="grid-item" bindtap="onItemClick">
+        <text class="icon">🎵</text>
+        <text class="label">Musik</text>
+      </view>
+      <view class="grid-item" bindtap="onItemClick">
+        <text class="icon">🚀</text>
+        <text class="label">Eksplorasi</text>
+      </view>
+    </view>
+
+    <!-- Konten Kedua: Dua Card -->
+    <view class="card-container">
+      <view class="card">
+        <text class="card-title">Inovasi Masa Depan</text>
+        <text class="card-desc">Teknologi yang mengubah dunia.</text>
+      </view>
+      <view class="card">
+        <text class="card-title">Tips Produktivitas</text>
+        <text class="card-desc">Meningkatkan efisiensi harian.</text>
+      </view>
+    </view>
+
+    <!-- Konten Ketiga: Chart -->
+    <view class="chart-container">
+      <view class="chart">
+        <text class="chart-title">Penjualan Bulanan</text>
+        <canvas canvas-id="barChart" style="width: 360px; height: 300px;"></canvas>
+      </view>
+      <view class="chart">
+        <text class="chart-title">Distribusi Produk</text>
+        <canvas canvas-id="pieChart" style="width: 360px; height: 200px;"></canvas>
+      </view>
+    </view>
+  </scroll-view>
+</view>

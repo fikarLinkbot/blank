@@ -1,7 +1,7 @@
 <view class="container py-4">
   <!-- Button -->
   <view class="mb-3">
-    <label class="form-label">Button:</label>
+    <label class="form-label me-3">Button:</label>
     <button bindtap="onButtonTap" class="btn btn-primary">Click Me</button>
   </view>
 
@@ -48,18 +48,17 @@
   </view>
 
   <!-- Slider -->
-  <view class="mb-3">
+  <view class="mb-3 me-5">
     <label for="slider" class="form-label">Slider:</label>
     <slider id="slider" value="{{sliderValue}}" min="0" max="100" bindchange="onSliderChange" class="form-range" />
   </view>
 
   <!-- Switch -->
   <view class="mb-3">
-    <label style="font-weight: bold; display: block; margin-bottom: 5px;">Switch:</label>
+    <label style="display: block; margin-bottom: 5px;">Switch:</label>
     <view class="d-flex align-items-center">
       <switch id="switch" checked="{{switchValue}}" bindchange="onSwitchChange" 
         style="margin-right: 10px;" />
-      <label for="switch">Switch</label>
     </view>
   </view>
 </view>
