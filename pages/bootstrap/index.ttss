@@ -1,6 +1,37 @@
 @import "../../lib/styles/bootstrap.min.ttss";
 
+.header .title {
+  display: block; /* Memastikan elemen berada di baris terpisah */
+  margin-bottom: 8px; /* Memberikan jarak di bawah elemen */
+}
+
+.header .subtitle {
+  display: block; /* Memastikan elemen berada di baris terpisah */
+  margin-top: 4px; /* Memberikan jarak di atas elemen */
+  color: gray;
+  font-size: 16px;
+}
+
 .container {
+  padding: 20px;
+}
+.text-center {
+  text-align: center;
+}
+.mt-3 {
+  margin-top: 1rem;
+}
+.mt-4 {
+  margin-top: 1.5rem;
+}
+.chart-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* .container {
   padding: 20px;
 }
 .header {
@@ -71,4 +102,4 @@
   font-weight: bold;
   margin-bottom: 10px;
   text-align: center;
-}
+} */
