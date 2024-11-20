@@ -6,7 +6,8 @@
     "pages/font/index",
     "pages/bootstrap/index",
     "pages/form/index",
-    "pages/media/index"
+    "pages/media/index",
+    "pages/map/index"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -49,6 +50,12 @@
         "iconPath": "images/dashboard.png",
         "selectedIconPath": "images/dashboard_active.png",
         "text": "Media"
+      },
+      {
+        "pagePath": "pages/map/index",
+        "iconPath": "images/dashboard.png",
+        "selectedIconPath": "images/dashboard_active.png",
+        "text": "Map"
       }
     ]
   },

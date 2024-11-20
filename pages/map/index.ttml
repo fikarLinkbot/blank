@@ -1,0 +1,25 @@
+<view class="container">
+  <!-- Header -->
+  <view class="header text-center">
+    <text class="title">Peta Interaktif</text>
+    <text class="subtitle">Temukan lokasi di sekitarmu</text>
+  </view>
+
+  <!-- Map Component -->
+  <map
+    id="map"
+    longitude="{{longitude}}"
+    latitude="{{latitude}}"
+    scale="14"
+    markers="{{markers}}"
+    show-location
+    style="width: 100%; height: 400px;"
+    bindregionchange="onRegionChange"
+    bindmarkertap="onMarkerTap"
+  ></map>
+
+  <!-- Button for Custom Action -->
+  <view class="controls">
+    <button bindtap="moveToLocation" class="btn">Pergi ke Lokasi Saya</button>
+  </view>
+</view>
