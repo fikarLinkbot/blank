@@ -26,9 +26,16 @@ const createRecord = async (token, newRecordData) => {
 
 Page({
   data: {
+    accessToken: '',
     name: '',
     age: '',
     status: '',
+  },
+
+  onLoad: function (options) {
+    this.setData({
+      accessToken: options.accessToken || '',
+    });
   },
 
   onNameInput: function (e) {
@@ -45,7 +52,7 @@ Page({
 
   submitForm: async function () {
     const app = getApp();
-    const { name, age, status } = this.data;
+    const { name, age, status, accessToken } = this.data;
 
     // Validasi input
     if (!name || !age || !status) {
@@ -57,10 +64,9 @@ Page({
     }
 
     try {
-      const token = JSON.parse(app.globalData.token).token;
       const newRecordData = { Name: name, Age: Number(age), Status: status };
 
-      await createRecord(token, newRecordData);
+      await createRecord(accessToken, newRecordData);
       tt.showToast({
         title: 'Record added successfully',
         icon: 'success'

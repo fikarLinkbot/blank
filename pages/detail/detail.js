@@ -51,7 +51,8 @@ Page({
     name: '',
     age: '',
     status: '',
-    recordId: ''
+    recordId: '',
+    accessToken: '',
   },
   onLoad: function (options) {
     this.setData({
@@ -59,6 +60,7 @@ Page({
       age: options.age || '',
       status: options.status || '',
       recordId: options.recordId || '',
+      accessToken: options.accessToken || '',
     });
   },
 
@@ -71,7 +73,7 @@ Page({
 
   handleEdit: async function () {
     const app = getApp();
-    const { name, age, status, recordId } = this.data;
+    const { name, age, status, recordId, accessToken } = this.data;
 
     // Validasi input
     if (!name || !age || !status) {
@@ -105,12 +107,11 @@ Page({
 
   handleDelete: async function () {
     const app = getApp();
-    const { name, age, status, recordId } = this.data;
+    const { name, age, status, recordId, accessToken } = this.data;
 
     try {
-      const token = JSON.parse(app.globalData.token).token;
 
-      await deleteRecord(token, recordId);
+      await deleteRecord(accessToken, recordId);
       tt.showToast({
         title: 'Record deleted successfully',
         icon: 'success'

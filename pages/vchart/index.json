@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "VChart",
+  "usingComponents": {
+    "chart": "@visactor/lark-vchart/index"
+  },
+ "enablePullDownRefresh": true
+}

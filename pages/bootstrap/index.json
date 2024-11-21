@@ -1,4 +1,7 @@
 {
   "navigationBarTitleText": "Bootstrap",
-  "usingComponents": {}
+  "usingComponents": {
+    "v-chart": "@visactor/lark-vchart/index"
+  },
+  "enablePullDownRefresh": true
 }

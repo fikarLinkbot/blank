@@ -1,5 +1,5 @@
 {
-  "pages":[
+  "pages": [
     "pages/crud/index",
     "pages/detail/detail",
     "pages/add/add",
@@ -7,13 +7,14 @@
     "pages/bootstrap/index",
     "pages/form/index",
     "pages/media/index",
-    "pages/map/index"
+    "pages/map/index",
+    "pages/vchart/index"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "Title",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
   },
   "tabBar": {
     "color": "#646A73",
@@ -56,13 +57,30 @@
         "iconPath": "images/dashboard.png",
         "selectedIconPath": "images/dashboard_active.png",
         "text": "Map"
+      },
+      {
+        "pagePath": "pages/vchart/index",
+        "iconPath": "images/dashboard.png",
+        "selectedIconPath": "images/dashboard_active.png",
+        "text": "VChart"
       }
     ]
   },
   "ext": {
     "defaultPages": {
-      "sidebarMode": "pages/form/index",
-      "PCMode": "pages/form/index"
+      "sidebarMode": "pages/vchart/index",
+      "PCMode": "pages/vchart/index"
     }
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "debug": false,
+  "newFramework": {
+    "enabled": true,
+    "minimumSupportedVersion": "5.12"
   }
 }

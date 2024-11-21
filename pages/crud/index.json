@@ -1,3 +1,4 @@
 {
-  "navigationBarTitleText": "CRUD"
+  "navigationBarTitleText": "CRUD",
+  "enablePullDownRefresh": true
 }

@@ -1,8 +1,9 @@
 Page({
+  data: {
+  },
   onLoad() {
     this.renderCharts();
   },
-
   renderCharts() {
     const barChart = tt.createCanvasContext('barChart');
     const pieChart = tt.createCanvasContext('pieChart');

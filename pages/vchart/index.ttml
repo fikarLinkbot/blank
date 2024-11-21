@@ -1,0 +1,65 @@
+<view class="container">
+  <view class="header text-center">
+    <text class="title display-4">Beragam Grafik dengan VChart</text>
+  </view>
+
+  <!-- Bar Chart -->
+  <view class="chart-container">
+    <text class="chart-title">Bar Chart</text>
+    <chart
+      canvas-id="barChart"
+      spec="{{ barSpec }}"
+      styles="width: 100%; height: 300px; border: 1px solid #ccc;"
+      bind:chartinit="onChartInit"
+      bind:chartready="onChartReady"
+    />
+  </view>
+
+  <!-- Line Chart -->
+  <view class="chart-container">
+    <text class="chart-title">Line Chart</text>
+    <chart
+      canvas-id="lineChart"
+      spec="{{ lineSpec }}"
+      styles="width: 100%; height: 300px; border: 1px solid #ccc;"
+      bind:chartinit="onChartInit"
+      bind:chartready="onChartReady"
+    />
+  </view>
+
+  <!-- Pie Chart -->
+  <view class="chart-container">
+    <text class="chart-title">Pie Chart</text>
+    <chart
+      canvas-id="pieChart"
+      spec="{{ pieSpec }}"
+      styles="width: 100%; height: 300px; border: 1px solid #ccc;"
+      bind:chartinit="onChartInit"
+      bind:chartready="onChartReady"
+    />
+  </view>
+
+  <!-- Scatter Chart -->
+  <view class="chart-container">
+    <text class="chart-title">Scatter Chart</text>
+    <chart
+      canvas-id="scatterChart"
+      spec="{{ scatterSpec }}"
+      styles="width: 100%; height: 300px; border: 1px solid #ccc;"
+      bind:chartinit="onChartInit"
+      bind:chartready="onChartReady"
+    />
+  </view>
+
+  <!-- Radar Chart -->
+  <view class="chart-container">
+    <text class="chart-title">Radar Chart</text>
+    <chart
+      canvas-id="radarChart"
+      spec="{{ radarSpec }}"
+      styles="width: 100%; height: 300px; border: 1px solid #ccc;"
+      bind:chartinit="onChartInit"
+      bind:chartready="onChartReady"
+    />
+  </view>
+</view>
