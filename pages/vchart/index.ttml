@@ -1,6 +1,6 @@
 <view class="container">
   <view class="header text-center">
-    <text class="title display-4">Beragam Grafik dengan VChart</text>
+    <text class="title display-4">Various Graphs with VChart</text>
   </view>
 
   <!-- Bar Chart -->
@@ -62,4 +62,113 @@
       bind:chartready="onChartReady"
     />
   </view>
+
+  <!-- Funnel Chart -->
+  <view class="chart-container">
+    <text class="chart-title">Funnel Chart</text>
+    <chart
+      canvas-id="funnelChart"
+      spec="{{ funnelSpec }}"
+      styles="width: 100%; height: 300px; border: 1px solid #ccc;"
+      bind:chartinit="onChartInit"
+      bind:chartready="onChartReady"
+    />
+  </view>
+    
+  <!-- Sankey Diagram -->
+  <view class="chart-container">
+    <text class="chart-title">Sankey Diagram</text>
+    <chart
+      canvas-id="sankeyChart"
+      spec="{{ sankeySpec }}"
+      styles="width: 100%; height: 300px; border: 1px solid #ccc;"
+      bind:chartinit="onChartInit"
+      bind:chartready="onChartReady"
+    />
+  </view>
+
+  <!-- Area Diagram -->
+  <view class="chart-container">
+    <text class="chart-title">Area Diagram</text>
+    <chart
+      canvas-id="areaChart"
+      spec="{{ areaSpec }}"
+      styles="width: 100%; height: 300px; border: 1px solid #ccc;"
+      bind:chartinit="onChartInit"
+      bind:chartready="onChartReady"
+    />
+  </view>
+
+  <!-- BoxPilot -->
+  <view class="chart-container">
+    <text class="chart-title">BoxPilot</text>
+    <chart
+      canvas-id="boxPilotChart"
+      spec="{{ boxPilotSpec }}"
+      styles="width: 100%; height: 300px; border: 1px solid #ccc;"
+      bind:chartinit="onChartInit"
+      bind:chartready="onChartReady"
+    />
+  </view>
+
+  <!-- DualAxis -->
+  <view class="chart-container">
+    <text class="chart-title">DualAxis</text>
+    <chart
+      canvas-id="dualAxisChart"
+      spec="{{ dualAxisSpec }}"
+      styles="width: 100%; height: 300px; border: 1px solid #ccc;"
+      bind:chartinit="onChartInit"
+      bind:chartready="onChartReady"
+    />
+  </view>
+
+  <!-- HorizontalBar -->
+  <view class="chart-container">
+    <text class="chart-title">HorizontalBar</text>
+    <chart
+      canvas-id="horizontalBarChart"
+      spec="{{ horizontalBarSpec }}"
+      styles="width: 100%; height: 300px; border: 1px solid #ccc;"
+      bind:chartinit="onChartInit"
+      bind:chartready="onChartReady"
+    />
+  </view>
+
+   <!-- Ring -->
+   <view class="chart-container">
+    <text class="chart-title">Ring</text>
+    <chart
+      canvas-id="ringChart"
+      spec="{{ ringSpec }}"
+      styles="width: 100%; height: 300px; border: 1px solid #ccc;"
+      bind:chartinit="onChartInit"
+      bind:chartready="onChartReady"
+    />
+  </view>
+
+  <!-- Rose -->
+  <view class="chart-container">
+    <text class="chart-title">Rose</text>
+    <chart
+      canvas-id="roseChart"
+      spec="{{ roseSpec }}"
+      styles="width: 100%; height: 300px; border: 1px solid #ccc;"
+      bind:chartinit="onChartInit"
+      bind:chartready="onChartReady"
+    />
+  </view>
+
+  <!-- WordCloud -->
+  <view class="chart-container">
+    <text class="chart-title">WordCloud</text>
+    <chart
+      canvas-id="wordCloudChart"
+      spec="{{ wordCloudSpec }}"
+      styles="width: 100%; height: 300px; border: 1px solid #ccc;"
+      bind:chartinit="onChartInit"
+      bind:chartready="onChartReady"
+    />
+  </view>
+
 </view>
